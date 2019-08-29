@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件判断语句if</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-if="seen">现在你看见我了</p>
+        <template v-if="ok">
+            <h1>菜鸟教程</h1>
+            <h1>慕课网</h1>
+            <h1>w3c school</h1>
+        </template>
+    </div>
+    <script>
+        new Vue({
+           el:"#app",
+           data:{
+               seen:false,
+               ok:true
+           }
+        });
+    </script>
+</body>
+</html>

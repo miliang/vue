@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件判断语句else if</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<!--判断type变量的值-->
+<body>
+    <div id="app">
+       <div v-if ="type === 'A'">
+           A
+       </div>
+        <div v-else-if = "type === 'B'">
+            B
+        </div>
+        <div v-else-if = "type === 'C'">
+            C
+        </div>
+        <div v-else>
+            D
+        </div>
+    </div>
+    <script>
+        new Vue({
+           el:"#app",
+            data:{
+               type:'C'
+            }
+        });
+    </script>
+</body>
+</html>

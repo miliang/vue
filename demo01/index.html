@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue实例测试</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{message}}</p>
+        <app-nav></app-nav>
+        <app-view>
+            <app-sidebar></app-sidebar>
+            <app-sidebar></app-sidebar>
+        </app-view>
+    </div>
+    <script><script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        new Vue({
+           el:"#app",
+           data:{
+               message:'Hello Vue.js!'
+           }
+        });
+    </script>
+</body>
+</html>

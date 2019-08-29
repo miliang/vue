@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件判断语句else</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<!--随机生成一个数字，判断是否大于0.5，然后输出对应的信息-->
+<body>
+    <div id="app">
+       <div v-if="Math.random() > 0.5">
+           Sorry
+       </div>
+        <div v-else>
+            Thanks
+        </div>
+    </div>
+    <script>
+        new Vue({
+           el:"#app"
+        });
+    </script>
+</body>
+</html>

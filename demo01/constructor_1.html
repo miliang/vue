@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造器-当属性值发生变化时html发生相应的变化</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="vue_det">
+        <h1>site:{{site}}</h1>
+        <h1>url:{{url}}</h1>
+        <h1>Alexa:{{alexa}}</h1>
+    </div>
+    <script>
+        //我们的数据对象
+       var data = {site:"菜鸟教程",
+                    url:"www.runoob.com",
+                    alexa:"10000"
+        };
+        var vm = new Vue({
+            el:"#vue_det",
+            data:data
+        });
+        //他们引用相同的对象
+        document.write(vm.site === data.site);//true
+        document.write("<br />");
+        data.alexa = 1234;
+        document.write(vm.alexa);//1234
+    </script>
+</body>
+</html>

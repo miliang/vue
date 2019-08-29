@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>循环——for迭代对象v1.1</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <h1>通过一个对象的属性来迭代数据，第二个参数为键名，第三个参数是索引</h1>
+    <div id="app">
+        <ul>
+            <li v-for="(value,key,index) in object">
+                {{index}} : {{key}} : {{value}}
+            </li>
+        </ul>
+    </div>
+    <script>
+        new Vue({
+           el:"#app",
+           data:{
+               object: {
+                   name:"vue",
+                   age:"迭代对象",
+                   slogan:"数据进行迭代"
+               }
+           }
+        });
+    </script>
+</body>
+</html>
